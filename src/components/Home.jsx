@@ -28,8 +28,8 @@ const Home = () => {
         <Heading m={"auto"} py={"2"} textAlign={"center"}>
           Services
         </Heading>
-        <Stack direction={["column", "column", "row"]} alignItems={"center"}>
-          <Image src={img6} h={["40", "500"]}></Image>
+        <Stack direction={["column", "column", "column", "row"]} alignItems={"center"}>
+          <Image src={img6} h={["400", "500"]}></Image>
           <Text
             px={["4", "16"]}
             textAlign={"center"}

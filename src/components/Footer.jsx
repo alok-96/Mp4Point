@@ -1,7 +1,5 @@
 import React from "react";
-import "../Footer.css";
 import logo from "../assets/favicon.png";
-import {Heading} from '@chakra-ui/react';
 
 import {
   AiFillCodepenCircle,
@@ -10,25 +8,38 @@ import {
   AiFillGithub,
   AiFillTwitterCircle,
 } from "react-icons/ai";
+import { HStack, Stack, VStack, Image, Text, Heading } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <div className="Footer">
-      <div className="copyright">
-        <div className="brand">
-          <img src={logo} alt="logo-icon" style={{ width: "30px" }} />
-          <Heading size={'md'}>Mp4Point</Heading>
-        </div>
-        <p>Copyright &copy; All Right Reserved.</p>
-      </div>
-      <div className="socials">
-        <AiFillCodepenCircle />
-        <AiFillFacebook />
-        <AiFillTwitterCircle />
-        <AiFillInstagram />
-        <AiFillGithub />
-      </div>
-    </div>
+    <Stack
+      direction={["column", "column", "row"]}
+      color={"#222222"}
+      bgColor={"#c8c8c8"}
+      paddingBottom={"1"}
+    >
+      <VStack alignItems={["center", "center", "start"]} px={"4"} flex={"50%"}>
+        <HStack>
+          <Image src={logo} w={["40px", "50px"]} />
+          <Heading fontSize={["md", "xl"]} color={""}>
+            Mp4Point
+          </Heading>
+        </HStack>
+        <Text>Copyright &copy; 2023 , All Rights Reserved.</Text>
+      </VStack>
+      <HStack
+        px={"4"}
+        flex={"50%"}
+        justifyContent={["center", "center", "flex-end"]}
+        gap={"30px"}
+      >
+        <AiFillCodepenCircle size={"30"} />
+        <AiFillFacebook size={"30"} />
+        <AiFillTwitterCircle size={"30"} />
+        <AiFillInstagram size={"30"} />
+        <AiFillGithub size={"30"} />
+      </HStack>
+    </Stack>
   );
 };
 
