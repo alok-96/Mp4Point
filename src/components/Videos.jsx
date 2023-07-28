@@ -56,6 +56,7 @@ const Videos = () => {
             marginY={"2"}
             alignSelf={'stretch'}
             paddingY={'4'}
+            colorScheme={'teal'}
             onClick={() => SetVideoSrc(item)}
           >
             Video {index + 1}

@@ -6,6 +6,7 @@ import Videos from "./components/Videos";
 import Upload from "./components/Upload";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import ScrollToTop from "./components/ScrollToTop";
 import ForgetPassword from "./components/ForgetPassword";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/forgetpassword" element={<ForgetPassword />} />
       </Routes>
       <Footer />
+      <ScrollToTop />
     </Router>
   );
 }

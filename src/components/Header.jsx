@@ -27,7 +27,7 @@ const Header = () => {
         top={"4"}
         left={"4"}
         borderRadius={"full"}
-        colorScheme={"gray"}
+        colorScheme={"teal"}
         variant={"solid"}
         zIndex={"overlay"}
         onClick={onOpen}
@@ -40,7 +40,7 @@ const Header = () => {
           <DrawerCloseButton />
           <DrawerHeader>
             <HStack>
-              <Image src={logo} />
+              <Image src={logo} width={'15%'} />
               <p>Mp4Point</p>
             </HStack>
           </DrawerHeader>

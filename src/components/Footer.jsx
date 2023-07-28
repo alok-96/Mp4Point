@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../assets/favicon.png";
 
 import {
-  AiFillCodepenCircle,
   AiFillFacebook,
   AiFillInstagram,
   AiFillGithub,
@@ -19,9 +18,9 @@ const Footer = () => {
       bgColor={"#c8c8c8"}
       paddingBottom={"1"}
     >
-      <VStack alignItems={["center", "center", "start"]} px={"4"} flex={"50%"}>
+      <VStack alignItems={["center", "center", "start"]} p={"4"} flex={"50%"}>
         <HStack>
-          <Image src={logo} w={["40px", "50px"]} />
+          <Image src={logo} w={"30px"} />
           <Heading fontSize={["md", "xl"]} color={""}>
             Mp4Point
           </Heading>
@@ -39,35 +38,38 @@ const Footer = () => {
           target="blank"
           rel="noopener noreferrer"
         >
-          <AiFillLinkedin size={"30"} />
+          <AiFillLinkedin size={"30"} color={"gray"} />
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=100070380284005"
           target="blank"
           rel="noopener noreferrer"
         >
-          <AiFillFacebook size={"30"} />
+          <AiFillFacebook size={"30"} color={"gray"} />
         </a>
         <a
           href="https://twitter.com/alokdwivedi99"
           target="blank"
           rel="noopener noreferrer"
         >
-          <AiFillTwitterCircle size={"30"} />
+          <AiFillTwitterCircle size={"30"} color={"gray"} />
         </a>
         <a
           href="https://www.instagram.com/_its_alok_07_/"
           target="blank"
           rel="noopener noreferrer"
         >
-          <AiFillInstagram size={"30"} />
+          <AiFillInstagram size={"30"} color={"gray"} />
         </a>
         <a
           href="https://github.com/alok-96"
           target="blank"
           rel="noopener noreferrer"
         >
-          <AiFillGithub size={"30"} />
+          <AiFillGithub
+            size={"30"}
+            color={"gray"}
+          />
         </a>
       </HStack>
     </Stack>
